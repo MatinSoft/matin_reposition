@@ -1,17 +1,12 @@
-"use client"
 import { Button, Dropdown, DropdownTrigger } from "@nextui-org/react";
 import { DropDown } from "../dropDown/dropDown";
 
-export const MyTopToolbar: React.FC = () => {
-  const dropDownClickHandler = (key: string) => {
+export const MyTopToolbar: React.FC<{ dropDownClickHandler: (key: string) => void }> = ({ dropDownClickHandler }) => {
 
-
-
-  }
   return (
     <div className="w-[100vw] h-[var(--toobar-height)] border-b border-b-lime-600 sticky bg-white flex items-center justify-start" >
 
-      <Button  className="rounded-md px-3 py-2  mx-5 text-sm font-medium text-white bg-slate-800" aria-current="page">Add Text</Button>
+      <Button className="rounded-md px-3 py-2  mx-5 text-sm font-medium text-white bg-slate-800" aria-current="page">Add Text</Button>
       <Dropdown>
         <DropdownTrigger >
           <Button
