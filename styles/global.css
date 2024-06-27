@@ -21,6 +21,7 @@
     --geist-error: #e00;
 
     --subtitle: #666;
+    --toobar-height : 75px
   }
 
   @media (prefers-color-scheme: dark) {

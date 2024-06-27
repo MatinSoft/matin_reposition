@@ -8,6 +8,7 @@
     "url": "https://mohitya.dev"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.4.2",
     "@remotion/bundler": "4.0.176",
     "@remotion/cli": "4.0.176",
     "@remotion/google-fonts": "4.0.176",
