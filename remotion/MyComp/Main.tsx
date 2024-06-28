@@ -33,7 +33,7 @@ export const Main = ({ title }: z.infer<typeof CompositionProps>) => {
   });
 
   return (
-    <AbsoluteFill className="bg-white">
+    <AbsoluteFill className="bg-white relative">
       <Sequence durationInFrames={transitionStart + transitionDuration}>
         <Rings outProgress={logoOut}></Rings>
         <AbsoluteFill className="justify-center items-center">
@@ -45,7 +45,7 @@ export const Main = ({ title }: z.infer<typeof CompositionProps>) => {
           <h1
             className="text-[70px] font-bold"
             style={{
-              fontFamily,
+              fontFamily
             }}
           >
             {title}
